@@ -1,0 +1,54 @@
+/* Apply styles to the entire body */
+body {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+/* Style table data cells (td elements) */
+td {
+    padding: 6px;
+    border-bottom: 1px solid gray;
+}
+
+/* Style table headers (th elements) */
+th {
+    background-color: #b7d0ff;
+    font-weight: bold;
+    padding: 12px 0px 12px 6px;
+    border-bottom: 2px solid gray;
+}
+
+/* Style the entire table */
+#employment-table {
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Apply background color to even rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Apply background color based on employment percentage */
+tr[data-employment-percentage-over-45] {
+    background-color: #abffbd;
+}
+
+tr[data-employment-percentage-under-25] {
+    background-color: #ff9e9e;
+}
+
+/* Center the content */
+.center {
+    margin: auto;
+    padding: 60px;
+    width: 60%;
+    text-align: center;
+}
+
+/* Center the h1 tag text */
+h1 {
+    text-align: center;
+}
